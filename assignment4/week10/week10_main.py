@@ -8,22 +8,6 @@ def test_Huffman():
     print(hm.getEncodedText())
     hm.printCodes()
     
-
-
-def test_minheap():
-    h1 = MinHeap()
-    h1.insert(45)
-    h1.insert(5)
-    h1.insert(12)
-    h1.insert(47)
-    h1.insert(222)
-    h1.insert(3)
-    h1.printHeap()
-    print(h1.heap)
-    h1.delete()
-    h1.printHeap()
-    print(h1.heap)
-    
 def tstmorsecode():
     code= "... --- ..."
     a = MorseCodes()
@@ -35,8 +19,9 @@ def tstmorsecode():
     print(a.Encode(sentence))
      
 def main():
-    # t1 = test_minheap()
+    
     test_Huffman()
-    # tstmorsecode()
+    tstmorsecode()
 
-main()
+if __name__ == "__main__":
+    main()
